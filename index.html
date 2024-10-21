@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Mahasiswa Baru - Universitas Teknologi Bandung</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 60%;
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="email"], input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .checkbox-group, .radio-group {
+            margin-bottom: 20px;
+        }
+        .btn-submit {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-submit:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pendaftaran Mahasiswa Baru</h1>
+        <form>
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email">
+
+            <label for="dob">Tanggal Lahir:</label>
+            <input type="date" id="dob" name="dob">
+
+            <div class="radio-group">
+                <label>Jenis Kelamin:</label>
+                <input type="radio" id="laki" name="gender" value="Laki-laki">
+                <label for="laki">Laki-laki</label>
+                <input type="radio" id="perempuan" name="gender" value="Perempuan">
+                <label for="perempuan">Perempuan</label>
+            </div>
+
+            <div class="checkbox-group">
+                <label>Program Studi Pilihan:</label>
+                <input type="checkbox" id="ti" name="program" value="Teknik Informatika">
+                <label for="ti">Teknik Informatika</label>
+                <input type="checkbox" id="si" name="program" value="Sistem Informasi">
+                <label for="si">Sistem Informasi</label>
+                <input type="checkbox" id="te" name="program" value="Teknik Elektro">
+                <label for="te">Teknik Elektro</label>
+            </div>
+
+            <div class="checkbox-group">
+                <label>Minat Ekstrakurikuler:</label>
+                <input type="checkbox" id="robotik" name="ekskul" value="Robotik">
+                <label for="robotik">Robotik</label>
+                <input type="checkbox" id="musik" name="ekskul" value="Musik">
+                <label for="musik">Musik</label>
+                <input type="checkbox" id="olahraga" name="ekskul" value="Olahraga">
+                <label for="olahraga">Olahraga</label>
+            </div>
+
+            <button type="submit" class="btn-submit">Daftar Sekarang</button>
+        </form>
+    </div>
+
+</body>
+</html>
